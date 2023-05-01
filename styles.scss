@@ -1,0 +1,351 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anuphan:wght@100;200;300;400;500;600;700&family=Dancing+Script:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+//fonts
+
+$font1:'Dancing Script', cursive;
+$font2:'Anuphan', sans-serif;
+$font3:'Open Sans', sans-serif;
+
+//font sizes
+
+$s1: 10px;
+$s2: 20px;
+$s3: 30px;
+$s4: 40px;
+$s5: 50px;
+$s6: 60px;
+$s8: 80px;
+$s14: 140px;
+
+//margin sizes
+
+$m1: 10px;
+$m2: 20px;
+$m3: 30px;
+$m4: 40px;
+$m10: 100px;
+
+//padding sizes
+
+$p1: 10px;
+$p2: 20px;
+$p3: 30px;
+$p4: 40px;
+$p10: 100px;
+$p20: 200px;
+$p30: 300px;
+
+//paleta de colores 
+
+$color1: #dcdcdc;
+$color2: #cccbcb;
+$color3: #807c7c;
+$color4: #4c4c4c;
+$color5: #1d2124;
+$color6: #232323;
+$color7: rgb(238, 231, 231); // light pink
+$blackg: rgba(18, 18, 18, 0.502); //header menu transparencia home
+$whiteg: rgba(255, 255, 255, 0.501);
+
+//CODIGO
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.row {
+       margin: 0;
+       padding: 0;
+}
+
+.col {
+       margin: 0;
+       padding: 0;
+}
+
+body {
+       background-color: $color7;
+}
+
+//HOME 
+
+.index__bg {
+             background-image: linear-gradient($blackg, $whiteg), url("assets/images/portatil.jpg");
+             background-size: cover;
+             background-position: center;
+             height: auto; 
+
+            .nav_1 {     
+                     background-color: $blackg;     
+            }
+}
+
+.jumbotron__box1 {
+                   padding-top: $p30;
+                   text-shadow: 1px 3px 5px $color5;
+                   text-align: center;
+                   margin-bottom: $m10;
+                   height: 800px;
+
+                  h1 {                    
+                       letter-spacing: 2px;
+                       color: $color2;
+                       font-family: $font3;                    
+                  }
+
+                  p {
+                      color: $color4;
+                      font-size: $s3;
+                      letter-spacing: 2px;
+                      padding-bottom: 80px;
+                  }
+
+                 a {
+                     border-radius: 12px;
+                     box-shadow: 10px 10px 7px rgba(0, 0, 0, 0.2);          
+                 }
+}
+
+.footer__box1 {  
+                nav {
+                      background-color: $blackg; 
+                      border-radius: 30px 30px 0 0;
+                      font-size: 10px;
+
+                   a {
+                       color: $color1;
+                   }
+               }
+}
+
+//ABOUT.HTML
+
+.about__box1 {
+               background-color: $color1;
+
+               header { 
+                        box-shadow: 10px 10px 7px rgba(0, 0, 0, 0.2);
+
+                        .nav_1 {     
+                                 background-color: $blackg;    
+                        }
+               }
+
+    h1 {
+         font-family: $font3;
+         font-size: 95px;
+         letter-spacing: -9px;
+         color: $color6;
+         line-height: 70px; 
+         text-shadow: 8px 7px 7px rgba(0, 0, 0, 0.2); 
+    }
+}
+
+.card__box1 {
+              background-color: $color1;
+              border-radius: 5px 5px 5px 5px;
+              margin-bottom: 100px;
+              border:none;   
+
+              .card__col1 {
+                            background-color: $color1;
+              }
+}
+
+.card__body {
+
+              h2 {
+                  font-family: $font2;
+                  color: $color4;
+                  text-align: start;
+                  line-height: 45px; 
+                  letter-spacing: -1px;
+                  padding-left: 1rem;
+              }
+
+              p {
+                  font-family: $font3;
+                  color: $color4;      
+              }
+
+              .btn__contact {
+                              box-shadow: 10px 10px 7px rgba(0, 0, 0, 0.2);
+              }
+}
+
+.img_Escritorio2 {
+                   border: 0.4em solid $whiteg;
+                   border-radius: 0.1em;
+                   box-shadow: 10px 10px 7px rgba(0, 0, 0, 0.2);
+                   width: 85%;
+                   height: auto;       
+}
+
+//mySkills
+
+.main-wrap {
+             filter: drop-shadow(-1px 6px 3px rgba(50, 50, 0, 0.5));
+             background-color: $color5;
+
+             .ms__section1 {
+                             background-color: $color5;
+                             min-height: 700px;
+                             clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+                             max-width: 1500px;
+                   
+                             h1 {
+                                  font-family: $font3;
+                                  font-size: 95px;
+                                  letter-spacing: -9px;
+                                  line-height: 70px; 
+                                  text-shadow: 8px 7px 7px rgba(0, 0, 0, 0.2);  
+
+                                  .mdSpan1 {
+                                             font-size: 60px;
+                                             color: $color4;
+                                             writing-mode: vertical-lr;
+                                             letter-spacing: -4px;
+                                             line-height: 1px; 
+                                  }
+
+                                  .mdSpan2 {
+                                             font-size: 95px;
+                                             color: $color2;                      
+                                             letter-spacing: -4px;
+                                             line-height: 0px; 
+                                  }
+
+                                  .mdSpan3 {
+                                             font-size: 40px;
+                                             color: $color4;                 
+                                             letter-spacing: -4px;
+                                             line-height: 0px; 
+                                  }
+
+                                  .mdSpan4 {
+                                     font-size: 95px;
+                                     color: $color3;                  
+                                     letter-spacing: -4px;
+                                     line-height: 0px; 
+                                  }
+                             }                       
+
+                       p {
+                           color: $color2;
+                           font-family: $font3;
+                       }
+            }
+}
+
+.barras__box {
+               margin-top: 100px;
+               margin-bottom: 100px;
+}
+
+.skillscard__box1 {
+                    background-color: $color2; 
+
+                    .card__box2 {    
+                                  background-color: $color2;
+                                  transform: skew(-5deg, 0deg);
+
+                                  .ms_cardBody{
+                                                background-color: $color5;
+                                                box-shadow: 10px 10px 7px rgba(0, 0, 0, 0.2);
+
+                                                h5{
+                                                    background-color: $color4;
+                                                    color: $color2;  
+                                                    font-family: $font3;        
+                                                }
+ 
+                                                p{
+                                                   background-color: $color4;
+                                                   color: $color2;  
+                                                   font-family: $font3;   
+                                                }
+                                   }
+                  }
+}
+
+//CONTACTO
+
+.contact__box1 {
+                 background-color: $color2;
+
+                 header {                        
+
+                    .nav_1 {     
+                            background-color: $blackg;  
+                            box-shadow: 10px 10px 7px rgba(0, 0, 0, 0.2);  
+                   }
+                }
+}
+
+.contact__section1 {
+                     background-color: $color2;
+                     min-height: 720px;
+       
+                     h1 {
+                          font-family: $font3;
+                          font-size: 95px;
+                          letter-spacing: -7px;
+                          color: $color6;
+                          line-height: 70px; 
+                          text-shadow: 8px 7px 7px rgba(0, 0, 0, 0.2); 
+                     }
+       
+                     h2 {
+                          color: $color6;
+                    }
+
+                     video {
+                             width:460px;
+                             height:auto;        
+                             background-size: cover;    
+                             max-width: 350px;
+                             box-shadow: 10px 10px 7px rgba(0, 0, 0, 0.2);
+                    }
+ }
+
+ //PORTFOLIO
+
+ .port__box1 {
+               background-color: $color5;
+               
+
+              h1 {
+                   font-family: $font3;
+                   font-size: $s8;
+                   letter-spacing: -7px;
+                   color: $color2;
+                   line-height: 50px;
+
+                  .pSpan1 {
+                    font-size: 60px;
+                    color: $color3;
+                    writing-mode: vertical-lr;
+                    letter-spacing: -4px;
+                    line-height: 1px; 
+                  }
+
+                  .pSpan2 {
+                    font-size: 95px;
+                    color: $color1;                      
+                    letter-spacing: -4px;
+                    line-height: 0px;  
+                  }
+             }
+
+             #galeria img {
+                            width: 100%;
+                            height: auto;
+             }
+
+             #galeria img:hover {
+                                  border: 5px solid $color7;
+             }
+}
