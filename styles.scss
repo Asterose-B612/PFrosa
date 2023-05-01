@@ -185,16 +185,20 @@ body {
 }
 
 //mySkills
-
+.ms__box1 {
+            background-color: $color2;
+}
 .main-wrap {
              filter: drop-shadow(-1px 6px 3px rgba(50, 50, 0, 0.5));
-             background-color: $color5;
+            //background-color: $color2;
 
              .ms__section1 {
                              background-color: $color5;
-                             min-height: 700px;
-                             clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+                             min-height: 550px;
+                             clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
                              max-width: 1500px;
+                             max-height: 900px;
+
                    
                              h1 {
                                   font-family: $font3;
@@ -204,7 +208,7 @@ body {
                                   text-shadow: 8px 7px 7px rgba(0, 0, 0, 0.2);  
 
                                   .mdSpan1 {
-                                             font-size: 60px;
+                                             font-size: $s6;
                                              color: $color4;
                                              writing-mode: vertical-lr;
                                              letter-spacing: -4px;
@@ -212,23 +216,23 @@ body {
                                   }
 
                                   .mdSpan2 {
-                                             font-size: 95px;
+                                             font-size: $s8;
                                              color: $color2;                      
                                              letter-spacing: -4px;
                                              line-height: 0px; 
                                   }
 
                                   .mdSpan3 {
-                                             font-size: 40px;
+                                             font-size: $s4;
                                              color: $color4;                 
                                              letter-spacing: -4px;
                                              line-height: 0px; 
                                   }
 
                                   .mdSpan4 {
-                                     font-size: 95px;
+                                     font-size: 75px;
                                      color: $color3;                  
-                                     letter-spacing: -4px;
+                                     letter-spacing: -9px;
                                      line-height: 0px; 
                                   }
                              }                       
@@ -236,13 +240,15 @@ body {
                        p {
                            color: $color2;
                            font-family: $font3;
+                           
                        }
             }
 }
 
+
 .barras__box {
                margin-top: 100px;
-               margin-bottom: 100px;
+               
 }
 
 .skillscard__box1 {
@@ -265,7 +271,9 @@ body {
                                                 p{
                                                    background-color: $color4;
                                                    color: $color2;  
-                                                   font-family: $font3;   
+                                                   font-family: $font3;
+                                                 
+                                                   
                                                 }
                                    }
                   }
@@ -287,8 +295,8 @@ body {
 
 .contact__section1 {
                      background-color: $color2;
-                     min-height: 720px;
-       
+                     min-height: 700px;
+
                      h1 {
                           font-family: $font3;
                           font-size: 95px;
@@ -303,10 +311,11 @@ body {
                     }
 
                      video {
-                             width:460px;
+                             width:320px;
                              height:auto;        
                              background-size: cover;    
-                             max-width: 350px;
+                             max-width: 400px;
+                             min-width: 320px;
                              box-shadow: 10px 10px 7px rgba(0, 0, 0, 0.2);
                     }
  }
@@ -314,38 +323,47 @@ body {
  //PORTFOLIO
 
  .port__box1 {
-               background-color: $color5;
+               background-color: $color2;
+
+               header { 
+                
+                       .nav_1 {     
+                                background-color: $blackg; 
+                                box-shadow: 10px 10px 7px rgba(0, 0, 0, 0.2);   
+                       }
+               }
                
+               h1 {
+                    font-family: $font3;
+                    font-size: $s8;
+                    letter-spacing: -7px;
+                    color: $color6;
+                    line-height: 50px;
+                    text-shadow: 8px 7px 7px rgba(0, 0, 0, 0.2);
 
-              h1 {
-                   font-family: $font3;
-                   font-size: $s8;
-                   letter-spacing: -7px;
-                   color: $color2;
-                   line-height: 50px;
+                   .pSpan1 {
+                             font-size: 60px;
+                             color: $color3;
+                             writing-mode: vertical-lr;
+                             letter-spacing: -4px;
+                             line-height: 1px;
+                    }
 
-                  .pSpan1 {
-                    font-size: 60px;
-                    color: $color3;
-                    writing-mode: vertical-lr;
-                    letter-spacing: -4px;
-                    line-height: 1px; 
-                  }
+                   .pSpan2 {
+                             font-size: 100px;
+                             color: $color5;                      
+                             letter-spacing:-4px;
+                             line-height: 0px; 
+                   }
+               }
 
-                  .pSpan2 {
-                    font-size: 95px;
-                    color: $color1;                      
-                    letter-spacing: -4px;
-                    line-height: 0px;  
-                  }
-             }
+               #galeria img {
+                              width: 100%;
+                              height: auto;
+                              box-shadow: 10px 10px 7px rgba(0, 0, 0, 0.2); 
+               }
 
-             #galeria img {
-                            width: 100%;
-                            height: auto;
-             }
-
-             #galeria img:hover {
-                                  border: 5px solid $color7;
-             }
+               #galeria img:hover {
+                                    border: 5px solid $color7;
+              }
 }

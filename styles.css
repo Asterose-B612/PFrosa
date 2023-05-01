@@ -114,15 +114,20 @@ body {
   height: auto;
 }
 
+.ms__box1 {
+  background-color: #cccbcb;
+}
+
 .main-wrap {
   filter: drop-shadow(-1px 6px 3px rgba(50, 50, 0, 0.5));
-  background-color: #1d2124;
 }
 .main-wrap .ms__section1 {
   background-color: #1d2124;
-  min-height: 700px;
-  clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+  min-height: 550px;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+          clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
   max-width: 1500px;
+  max-height: 900px;
 }
 .main-wrap .ms__section1 h1 {
   font-family: "Open Sans", sans-serif;
@@ -139,7 +144,7 @@ body {
   line-height: 1px;
 }
 .main-wrap .ms__section1 h1 .mdSpan2 {
-  font-size: 95px;
+  font-size: 80px;
   color: #cccbcb;
   letter-spacing: -4px;
   line-height: 0px;
@@ -151,9 +156,9 @@ body {
   line-height: 0px;
 }
 .main-wrap .ms__section1 h1 .mdSpan4 {
-  font-size: 95px;
+  font-size: 75px;
   color: #807c7c;
-  letter-spacing: -4px;
+  letter-spacing: -9px;
   line-height: 0px;
 }
 .main-wrap .ms__section1 p {
@@ -163,7 +168,6 @@ body {
 
 .barras__box {
   margin-top: 100px;
-  margin-bottom: 100px;
 }
 
 .skillscard__box1 {
@@ -198,7 +202,7 @@ body {
 
 .contact__section1 {
   background-color: #cccbcb;
-  min-height: 720px;
+  min-height: 700px;
 }
 .contact__section1 h1 {
   font-family: "Open Sans", sans-serif;
@@ -212,22 +216,28 @@ body {
   color: #232323;
 }
 .contact__section1 video {
-  width: 460px;
+  width: 320px;
   height: auto;
   background-size: cover;
-  max-width: 350px;
+  max-width: 400px;
+  min-width: 320px;
   box-shadow: 10px 10px 7px rgba(0, 0, 0, 0.2);
 }
 
 .port__box1 {
-  background-color: #1d2124;
+  background-color: #cccbcb;
+}
+.port__box1 header .nav_1 {
+  background-color: rgba(18, 18, 18, 0.502);
+  box-shadow: 10px 10px 7px rgba(0, 0, 0, 0.2);
 }
 .port__box1 h1 {
   font-family: "Open Sans", sans-serif;
   font-size: 80px;
   letter-spacing: -7px;
-  color: #cccbcb;
+  color: #232323;
   line-height: 50px;
+  text-shadow: 8px 7px 7px rgba(0, 0, 0, 0.2);
 }
 .port__box1 h1 .pSpan1 {
   font-size: 60px;
@@ -237,17 +247,16 @@ body {
   line-height: 1px;
 }
 .port__box1 h1 .pSpan2 {
-  font-size: 95px;
-  color: #dcdcdc;
+  font-size: 100px;
+  color: #1d2124;
   letter-spacing: -4px;
   line-height: 0px;
 }
 .port__box1 #galeria img {
   width: 100%;
   height: auto;
+  box-shadow: 10px 10px 7px rgba(0, 0, 0, 0.2);
 }
 .port__box1 #galeria img:hover {
   border: 5px solid rgb(238, 231, 231);
-}
-
-/*# sourceMappingURL=styles.css.map */
+}/*# sourceMappingURL=styles.css.map */
